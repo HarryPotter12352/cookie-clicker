@@ -1,0 +1,24 @@
+{
+  "name": "cookie-clicker",
+  "version": "0.1.0",
+  "description": "This is a cookie clicker developed by me in my free time",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HarryPotter12352/cookie-clicker.git"
+  },
+  "author": "Harry James Potter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HarryPotter12352/cookie-clicker/issues"
+  },
+  "homepage": "https://github.com/HarryPotter12352/cookie-clicker#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.4",
+    "nodemon": "^2.0.12"
+  }
+}
