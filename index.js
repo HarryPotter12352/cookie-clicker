@@ -1,7 +1,6 @@
 const express = require("express");
 const game_router = require("./routes/game/index");
 const user_router = require("./routes/users/index");
-const userModel = require("./database/schemas/user");
 const {
     port,
     mongo_url
@@ -20,8 +19,6 @@ app.set("view engine", "ejs");
 app.get("/", (req, res) => {
     res.send("Welcome to my game's homepage!");
 })
-
-
 
 
 

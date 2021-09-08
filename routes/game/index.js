@@ -5,7 +5,7 @@ const cookieModel = require("../../database/schemas/cookies");
 
 
 router.get("/", (req, res) => {
-    res.render("game/index.ejs")
+    res.render("game/index.ejs", {data: {number: cookieModel.number}})
 })
 
 router.post("/clicked", async (req, res) => {

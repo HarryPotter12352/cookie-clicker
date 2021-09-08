@@ -30,6 +30,22 @@ router.post("/signedup", urlencodedParser, async (req, res) => {
     
 })
 
+router.get("/login", async (req, res) => {
+    res.render("users/login.ejs", {data: {message: ""}})
+})
+
+
+router.post("/loggedin",urlencodedParser, async (req, res) => {
+    const query = userModel.findOne({username: req.body.username, password: req.body.password}, async (err, doc) => {
+        if(doc === null){
+            res.render("users/login.ejs", {data: {message: "Invalid credentials!"}});
+        }
+        else{
+            res.send(`Logged in with username ${req.body.username}`);
+        }
+    })
+})
+
 
 
 
